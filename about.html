@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="about.css" />
+  <title>About </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #0078d4;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-style: italic;
+      opacity: 0;
+      animation: slide-up 1s forwards;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    main {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      opacity: 0;
+      animation: slide-up 1s forwards;
+    }
+
+    main img {
+      max-width: 300px;
+      border-radius: 10px;
+      margin-right: 20px;
+      flex: 1;
+    }
+
+    main h2 {
+      color: #0078d4;
+      font-size: 35px;
+    }
+
+    main p {
+      line-height: 1.6;
+      flex: 2;
+      font-size: 22px;
+    }
+
+    footer {
+     
+      color: #080808;
+      padding: 20px;
+      text-align: center;
+      opacity: 0;
+      animation: slide-up 1s forwards;
+    }
+
+    main p {
+      line-height: 1.6;
+      font-size: 22px;
+      margin-bottom: 20px; /* Add margin bottom for better readability between paragraphs */
+    }
+
+    @keyframes slide-up {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* (typically phones) */
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      /* (typically tablets) */
+    }
+
+    @media (min-width: 1025px) {
+      /* (typically desktops) */
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>About Me</h1>
+</header>
+<main>
+  <div>
+    <h2>Hello!! <br />I'm Saad Hussain</h2>
+    <p>
+      I am a Computer Science undergraduate student at JSS Science and
+      Technology University, Mysore, Karnataka, India.<br />With a deep
+      passion for web development, I aspire to become a proficient web
+      developer.
+    </p>
+    <p>
+      I am currently in my final year of studies, specializing in computer science, at JSS Science and Technology University in Mysore, Karnataka, India. Throughout my academic journey, I've developed a keen interest in exploring the intricacies of web development.
+    </p>
+    <p>
+      Driven by my fascination with creating dynamic and user-friendly web experiences, I've dedicated myself to mastering various programming languages and frameworks. I'm particularly enthusiastic about honing my skills in HTML, CSS, and JavaScript.
+    </p>
+    <p>
+      Beyond the classroom, I actively seek out opportunities to expand my knowledge and refine my craft. Whether it's through personal projects, online courses, or collaborative initiatives, I am constantly pushing myself to learn and grow as a web developer.
+    </p>
+    <p>
+      With a strong foundation in computer science principles and a passion for innovation, I am determined to leverage my skills and expertise to make meaningful contributions to the ever-evolving field of web development.
+    </p>
+  </div>
+</main>
+
+<footer>
+  &copy; Saad-Hussain-Portfolio. All rights reserved.
+</footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="contact.css" />
+  <title>Contact Me</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-section {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 80%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      opacity: 0;
+      animation: slide-up 1s forwards;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    footer {
+      
+      color: #0b0b0b;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    @keyframes slide-up {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* (typically phones) */
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      /* (typically tablets) */
+    }
+
+    @media (min-width: 1025px) {
+      /* (typically desktops) */
+    }
+  </style>
+</head>
+<body>
+  <section class="contact-section">
+    <h1>Contact Information</h1>
+    <p>
+      <b>Email:</b>
+      <a href="mailto:saadhussainckm@gmail.com">saadhussainckm@gmail.com</a>
+    </p>
+    <p>Phone: +91 6363712361</p>
+    <p>
+      <b>LinkedIn:</b>
+      <a href="https://www.linkedin.com/in/saad-hussain-607680242">saad-hussain-607680242</a>
+    </p>
+    <p>
+      <b>Instagram:</b>:
+      <a href="https://www.instagram.com/saad__hussain07">@saad_hussain07</a>
+    </p>
+    <p>
+      <b>Github:</b>:
+      <a href="https://github.com/saadhussain01306">Saad-Hussain</a>
+    </p>
+  </section>
+  <footer>
+    &copy; Saad-Hussain-Portfolio. All rights reserved.
+  </footer>
+</body>
+</html>

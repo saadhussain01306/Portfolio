@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to left, #b3e3f9, #9eddf9, #87d8f8, #6cd2f8, #48cdf7);
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: slide-up 1s ease;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .education-details {
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: slide-right 1s forwards;
+        }
+
+        .education-details:nth-child(odd) {
+            animation-delay: 0.2s;
+        }
+
+        .education-details:nth-child(even) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes slide-up {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-right {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .footer {
+            color: #0e0e0e;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Education</h1>
+        <div class="education-details">
+            <h2>JSS SCIENCE AND TECHNOLOGY UNIVERSITY, MYSORE, KARNATAKA, INDIA</h2>
+            <p>B.E in Computer Science and Engineering</p>
+            <p>2021-2025</p>
+            <p>Grade: 9.07 (till 5th Semester)</p>
+        </div>
+
+        <div class="education-details">
+            <h2>ST MARY'S PU COLLEGE, CHIKMAGALUR</h2>
+            <p>12th, 2020-2021</p>
+            <p>Grade: 99.5%</p>
+        </div>
+
+        <div class="education-details">
+            <h2>VASAVI VIDYA SAMSTHE, CHIKMAGLUR</h2>
+            <p>10th, 2018-2019</p>
+            <p>Grade: 98.08%</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; Saad-Hussain-Portfolio. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

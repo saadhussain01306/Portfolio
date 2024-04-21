@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skills.css" />
+    <title>Skills</title>
+    <style>
+        body,
+        h2,
+        ul,
+        li,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: linear-gradient(to right top, #b3e3f9, #9eddf9, #87d8f8, #6cd2f8, #48cdf7);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            animation: slide-up 1s ease;
+        }
+
+        .skills-section {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 50px;
+            margin: 20px 0;
+            color: rgb(29, 114, 206);
+            padding: 10px;
+            font-style: italic;
+        }
+
+        .section1,
+        .section2 {
+            flex: 1;
+            margin: 0 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-top: auto;
+            align-items: center;
+            opacity: 0;
+            animation: slide-left 1s forwards;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            font-size: 18px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #c0c0c0;
+            transform: scale(1.05);
+        }
+
+        .footer {
+           
+            color: #080808;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @keyframes slide-up {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-left {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* (typically phones) */
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            /* (typically tablets) */
+        }
+
+        @media (min-width: 1025px) {
+            /* (typically desktops) */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Skills</h1>
+        <section class="skills-section">
+            <div class="section1">
+                <h2>Programming Languages</h2>
+                <ul>
+                    <li>C programming</li>
+                    <li>Java</li>
+                    <li>HTML, CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+            <div class="section2">
+                <h2>Other Skills</h2>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Project Management</li>
+                    <li>Leadership</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; Saad-Hussain-Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
