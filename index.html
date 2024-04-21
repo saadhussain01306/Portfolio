@@ -329,41 +329,26 @@
         - #CONTACT
       -->
 
+      <!-- contact section -->
       <section class="section contact" aria-label="contact">
         <div class="container">
-
           <div class="contact-card">
-
             <div class="contact-content" data-reveal="left">
-
               <div class="card-icon">
                 <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
               </div>
-
               <h2 class="h2 section-title">Suggestions</h2>
-
-              <p class="section-text">
-                Add Your Valuable Suggestions Here
-              </p>
-
+              <p class="section-text">Add Your Valuable Suggestions Here</p>
             </div>
-
-            <form action="" class="contact-form" data-reveal="right">
-
+            <form action="#" class="contact-form" data-reveal="right" id="contactForm">
               <div class="input-wrapper">
                 <input type="text" name="name" placeholder="Name *" required class="input-field">
-
                 <input type="email" name="email_address" placeholder="Email *" required class="input-field">
               </div>
-
               <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
-
               <button type="submit" class="btn btn-secondary">Send message</button>
-
             </form>
-
           </div>
-
         </div>
       </section>
 
@@ -424,6 +409,22 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    // Get the form element
+    const form = document.getElementById('contactForm');
+  
+    // Add submit event listener to the form
+    form.addEventListener('submit', function(event) {
+      // Prevent the default form submission
+      event.preventDefault();
+      
+      // Show the alert message
+      alert("Thank you for your suggestion");
+      
+      // You can add additional code here to handle the form submission, like sending data to a server via AJAX
+    });
+  </script>
 
 </body>
 
